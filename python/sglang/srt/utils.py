@@ -54,7 +54,9 @@ import torch.distributed
 import torch.distributed as dist
 import triton
 import zmq
-from decord import VideoReader, cpu
+# from decord import VideoReader, cpu
+VideoReader = None
+cpu = None
 from fastapi.responses import ORJSONResponse
 from packaging import version as pkg_version
 from PIL import Image
